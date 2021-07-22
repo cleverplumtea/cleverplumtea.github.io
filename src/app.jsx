@@ -87,7 +87,7 @@ const App = () => {
         <h3>Projects</h3>
         <div className="projects-content">
           <div className="project">
-            <img className="project-image" src={Batuta} alt="Batuta" />
+            <img className="project-image1" src={Batuta} alt="Batuta" />
             <div className="project-content">
               <label>Batuta</label>
               <span className="project-subtitle">
