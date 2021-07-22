@@ -80,6 +80,7 @@ const App = () => {
             curious about languages and I enjoy reading newspapers and thinking
             about The Brothers Karamazov.
           </p>
+          <p>Say hello at lee.dahyun@gmail.com</p>
         </div>
       </section>
       <section className="projects" id="projects">
