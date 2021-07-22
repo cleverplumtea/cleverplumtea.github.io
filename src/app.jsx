@@ -3,12 +3,10 @@ import "./app.scss";
 import { ReactComponent as GithubIcon } from "./assets/github.svg";
 import { ReactComponent as LinkedInIcon } from "./assets/linkedin.svg";
 import { ReactComponent as MailIcon } from "./assets/mail.svg";
-import Logo from "./assets/logo.png";
-import LogoInverted from "./assets/logo-inverted.png";
-import Chatter from "./assets/chatter.png";
-import aMDB from "./assets/amdb.png";
-import foodie from "./assets/foodie.png";
-import YummyDish from "./assets/yummy.png";
+import Murakami from "./assets/murakami.png";
+import Soup from "./assets/soup.png";
+import Mars from "./assets/mars.png";
+import Batuta from "./assets/batuta.png";
 
 const App = () => {
   const [isSticky, setSticky] = useState(false);
@@ -35,13 +33,13 @@ const App = () => {
     <div className="app" id="home">
       <header className={isSticky ? "active" : ""}>
         <div className="header-content">
-          <span className="link" onClick={() => handleJump("#home")}>
+          {/* <span className="link" onClick={() => handleJump("#home")}>
             <img
               src={isSticky ? LogoInverted : Logo}
               alt="Peter Cho"
               className="header-logo"
             />
-          </span>
+          </span> */}
           <span className="header-links">
             <span className="link" onClick={() => handleJump("#about")}>
               About
@@ -59,8 +57,9 @@ const App = () => {
         <div className="hero-content">
           <div className="hero-title">Hi, I'm Dahyun.</div>
           <div className="hero-blurb">
-            I'm a software engineer with a passion for solving problems,
-            learning new skills, and constantly improving myself.
+            I'm a software engineer/full stack developer with a passion for
+            solving problems, learning new skills, and constantly improving
+            myself.
           </div>
           <div className="hero-social">
             <a href="https://github.com/cleverplumtea">
@@ -75,55 +74,65 @@ const App = () => {
       <section className="about" id="about">
         <div className="about-content">
           <h3>About Me</h3>
-          <p>I'm a software engineer located in New York City.</p>
+          <p>
+            I'm a Brooklyn-born software engineer located in New York City. I've
+            traveled through five continents and opened a restaurant in NYC. I'm
+            curious about languages and I enjoy reading newspapers and thinking
+            about The Brothers Karamazov.
+          </p>
         </div>
       </section>
       <section className="projects" id="projects">
         <h3>Projects</h3>
         <div className="projects-content">
           <div className="project">
-            <img className="project-image" src={Chatter} alt="Chatter" />
+            <img className="project-image" src={Batuta} alt="Batuta" />
             <div className="project-content">
-              <label>Chatter</label>
+              <label>Batuta</label>
               <span className="project-subtitle">
-                React, Ruby on Rails, PostgreSQL
+                React-Native, Expo, SQLite
               </span>
               <span className="project-links">
-                <a href="http://cute-bird.surge.sh/">LIVE</a>
-                <a href="https://github.com/pcho90/chatter">GITHUB</a>
-              </span>
-            </div>
-          </div>
-          <div className="project">
-            <img className="project-image" src={aMDB} alt="aMDB" />
-            <div className="project-content">
-              <label>aMDB</label>
-              <span className="project-subtitle">React</span>
-              <span className="project-links">
-                <a href="https://unruffled-curran-775cfe.netlify.app/">LIVE</a>
-                <a href="https://github.com/pcho90/amdb">GITHUB</a>
+                <a href="https://youtu.be/3ypNHNpK2L8">DEMO</a>
+                <a href="https://github.com/bulgogi-burrito/batuta">GITHUB</a>
               </span>
             </div>
           </div>
           <div className="project">
-            <img className="project-image" src={foodie} alt="foodie" />
+            <img className="project-image" src={Mars} alt="Mars" />
             <div className="project-content">
-              <label>foodie</label>
-              <span className="project-subtitle">JavaScript</span>
+              <label>All About Ares</label>
+              <span className="project-subtitle">JavaScript, React</span>
               <span className="project-links">
-                <a href="https://unruffled-khorana-a6a8a5.netlify.app/">LIVE</a>
-                <a href="https://github.com/pcho90/foodie">GITHUB</a>
+                <a href="https://all-about-ares.herokuapp.com/">LIVE</a>
+                <a href="https://github.com/cleverplumtea/all-about-ares">
+                  GITHUB
+                </a>
               </span>
             </div>
           </div>
           <div className="project">
-            <img className="project-image" src={YummyDish} alt="Yummy Dish" />
+            <img className="project-image" src={Soup} alt="Soup" />
             <div className="project-content">
-              <label>Yummy Dish</label>
-              <span className="project-subtitle">React, Express, MongoDB</span>
+              <label>One Soup To Rule Them All</label>
+              <span className="project-subtitle">React, Redux, PostgreSQL</span>
               <span className="project-links">
-                <a href="http://tan-wrench.surge.sh/">LIVE</a>
-                <a href="https://github.com/pcho90/yummy-dish">GITHUB</a>
+                <a href="https://oneshoptorulethemall.herokuapp.com/">LIVE</a>
+                <a href="https://github.com/2011-team-tenren/oneshoptorulethemall">
+                  GITHUB
+                </a>
+              </span>
+            </div>
+          </div>
+          <div className="project">
+            <img className="project-image" src={Murakami} alt="Murakami" />
+            <div className="project-content">
+              <label>Murakami</label>
+              <span className="project-subtitle">Python, Flask</span>
+              <span className="project-links">
+                <a href="https://github.com/cleverplumtea/haruki_murakami">
+                  GITHUB
+                </a>
               </span>
             </div>
           </div>
