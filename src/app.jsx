@@ -59,9 +59,9 @@ const App = () => {
         <div className="hero-content">
           <div className="hero-title">Hi, I'm Dahyun.</div>
           <div className="hero-blurb">
-            I'm a software engineer/full stack developer with a passion for
-            solving problems, learning new skills, and constantly improving
-            myself.
+            I'm a software engineer <span>&#38;</span> full stack developer with
+            a habit of solving problems, learning new skills, and chasing my
+            curiosity.
           </div>
           <div className="hero-social">
             <a href="https://github.com/cleverplumtea">
@@ -77,10 +77,10 @@ const App = () => {
         <div className="about-content">
           <h3>About Me</h3>
           <p>
-            I'm a Brooklyn-born software engineer located in New York City. I've
-            traveled through five continents and opened a restaurant in NYC. I'm
-            curious about languages and I enjoy reading newspapers and thinking
-            about The Brothers Karamazov.
+            I'm a Brooklyn-born software engineer located in New York City. I
+            used to be a history teacher, traveled across six continents, and
+            opened a restaurant in NYC. I like languages, newspapers, and
+            thinking about <i>The Brothers Karamazov</i>.
           </p>
           <p>Say hello at lee.dahyun@gmail.com</p>
         </div>
