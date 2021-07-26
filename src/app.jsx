@@ -3,6 +3,8 @@ import "./app.scss";
 import { ReactComponent as GithubIcon } from "./assets/github.svg";
 import { ReactComponent as LinkedInIcon } from "./assets/linkedin.svg";
 import { ReactComponent as MailIcon } from "./assets/mail.svg";
+import Logo from "./assets/logo.png";
+import LogoInverted from "./assets/logo-inverted.png";
 import Murakami from "./assets/murakami.png";
 import Soup from "./assets/soup.png";
 import Mars from "./assets/mars.png";
@@ -33,13 +35,13 @@ const App = () => {
     <div className="app" id="home">
       <header className={isSticky ? "active" : ""}>
         <div className="header-content">
-          {/* <span className="link" onClick={() => handleJump("#home")}>
+          <span className="link" onClick={() => handleJump("#home")}>
             <img
               src={isSticky ? LogoInverted : Logo}
-              alt="Peter Cho"
+              alt="Dahyun Lee"
               className="header-logo"
             />
-          </span> */}
+          </span>
           <span className="header-links">
             <span className="link" onClick={() => handleJump("#about")}>
               About
